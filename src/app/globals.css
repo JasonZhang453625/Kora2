@@ -45,14 +45,30 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: normal;
 }
 
-section {
-  scroll-snap-align: start;
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
 }
 
-footer {
-  scroll-snap-align: start;
+/* Desktop: scroll snap */
+@media (hover: hover) and (pointer: fine) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: normal;
+  }
+
+  section,
+  footer {
+    scroll-snap-align: start;
+  }
+}
+
+/* Mobile: natural touch scrolling */
+@media (hover: none) and (pointer: coarse) {
+  html {
+    scroll-snap-type: none;
+  }
 }
