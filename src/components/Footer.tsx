@@ -7,22 +7,28 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border px-6 py-12">
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="text-center md:text-left">
-          <span className="font-mono font-bold text-text-primary">KORA</span>
-          <p className="text-sm text-text-secondary mt-1">{t.footer.tagline}</p>
+      <div className="mx-auto max-w-6xl flex flex-col items-center gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+          <div className="text-center md:text-left">
+            <span className="font-mono font-bold text-text-primary">KORA</span>
+            <p className="text-sm text-text-secondary mt-1">{t.footer.tagline}</p>
+          </div>
+
+          <div className="flex items-center gap-6 text-sm font-mono text-text-secondary">
+            <a
+              href="https://t.me/KORA_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              Telegram
+            </a>
+            <span>{t.footer.copyright}</span>
+          </div>
         </div>
 
-        <div className="flex items-center gap-6 text-sm font-mono text-text-secondary">
-          <a
-            href="https://t.me/KORA_bot"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-accent transition-colors"
-          >
-            Telegram
-          </a>
-          <span>{t.footer.copyright}</span>
+        <div className="text-sm font-mono text-text-secondary border-t border-border pt-4 w-full text-center">
+          {t.footer.contact}
         </div>
       </div>
     </footer>

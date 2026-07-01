@@ -49,6 +49,7 @@ export interface TranslationDict {
   footer: {
     tagline: string;
     copyright: string;
+    contact: string;
   };
 }
 
@@ -104,6 +105,7 @@ const en: TranslationDict = {
   footer: {
     tagline: "Your local friend who actually lives in China",
     copyright: "Built for travelers exploring China",
+    contact: "Contact us: @KORA AI伴旅",
   },
 };
 
@@ -158,6 +160,7 @@ const zh: TranslationDict = {
   footer: {
     tagline: "你的中国本地朋友",
     copyright: "为探索中国的旅行者而生",
+    contact: "联系我们：@KORA AI伴旅",
   },
 };
 

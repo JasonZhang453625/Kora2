@@ -45,15 +45,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: normal;
 }
 
-section, footer {
+section {
   scroll-snap-align: start;
 }
 
-body {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  font-family: var(--font-sans);
+footer {
+  scroll-snap-align: start;
 }
