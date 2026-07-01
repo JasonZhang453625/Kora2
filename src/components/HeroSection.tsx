@@ -76,7 +76,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right: screenshot 1 */}
-          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0 lg:ml-auto">
+          <div className="rounded-xl border border-border overflow-hidden shadow-2xl rotate-[2deg] hover:rotate-0 transition-transform duration-500 max-w-sm mx-auto lg:mx-0 lg:ml-auto">
             <Image
               src="/images/1.jpg"
               alt="KORA Telegram chat"

@@ -17,7 +17,7 @@ export default function HowItWorksSection() {
       <div className="mx-auto max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: screenshot 2 */}
-          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0">
+          <div className="rounded-xl border border-border overflow-hidden shadow-2xl max-w-sm mx-auto lg:mx-0">
             <Image
               src="/images/2.jpg"
               alt="KORA conversation"
