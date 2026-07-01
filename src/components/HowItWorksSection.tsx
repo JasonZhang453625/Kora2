@@ -16,7 +16,18 @@ export default function HowItWorksSection() {
     <section className="min-h-screen flex items-center px-6 py-24">
       <div className="mx-auto max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: text */}
+          {/* Left: screenshot 2 */}
+          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0">
+            <Image
+              src="/images/2.jpg"
+              alt="KORA conversation"
+              width={400}
+              height={533}
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Right: text */}
           <div>
             <h2 className="font-mono font-bold text-2xl md:text-3xl text-text-primary mb-4">
               {t.howItWorks.title}
@@ -44,17 +55,6 @@ export default function HowItWorksSection() {
                 );
               })}
             </div>
-          </div>
-
-          {/* Right: screenshot */}
-          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0">
-            <Image
-              src="/images/1.jpg"
-              alt="KORA Telegram chat"
-              width={400}
-              height={533}
-              className="w-full h-auto"
-            />
           </div>
         </div>
       </div>

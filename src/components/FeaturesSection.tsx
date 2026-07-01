@@ -18,7 +18,7 @@ export default function FeaturesSection() {
     <section className="min-h-screen flex items-center px-6 py-24 bg-bg-secondary">
       <div className="mx-auto max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: feature cards */}
+          {/* Left: text + feature cards */}
           <div>
             <h2 className="font-mono font-bold text-2xl md:text-3xl text-text-primary mb-4">
               {t.features.title}
@@ -41,11 +41,11 @@ export default function FeaturesSection() {
             </div>
           </div>
 
-          {/* Right: screenshot */}
-          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0">
+          {/* Right: screenshot 3 */}
+          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0 lg:ml-auto">
             <Image
-              src="/images/2.jpg"
-              alt="KORA recommending places"
+              src="/images/3.jpg"
+              alt="KORA recommendations"
               width={400}
               height={533}
               className="w-full h-auto"
