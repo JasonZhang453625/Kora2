@@ -42,12 +42,12 @@ export default function FeaturesSection() {
           </div>
 
           {/* Right: screenshot */}
-          <div className="rounded-xl border border-border overflow-hidden shadow-lg">
+          <div className="rounded-xl border border-border overflow-hidden shadow-lg max-w-sm mx-auto lg:mx-0">
             <Image
               src="/images/2.jpg"
               alt="KORA recommending places"
-              width={600}
-              height={800}
+              width={400}
+              height={533}
               className="w-full h-auto"
             />
           </div>
