@@ -69,7 +69,7 @@ export default function HeroSection() {
             </div>
 
             <div>
-              <Button variant="primary" href="https://t.me/Kora_china_bot">
+              <Button variant="primary" href="https://t.me/KORA_bot">
                 {t.hero.cta} ↗
               </Button>
             </div>

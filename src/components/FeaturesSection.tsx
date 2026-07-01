@@ -15,8 +15,19 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center px-6 py-24 bg-bg-secondary">
-      <div className="mx-auto max-w-6xl w-full">
+    <section className="relative min-h-screen flex items-center px-6 py-24">
+      {/* Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/images/hero-bg.png"
+          alt=""
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-bg-primary/60 backdrop-blur-[2px]" />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: text + feature cards */}
           <div>
