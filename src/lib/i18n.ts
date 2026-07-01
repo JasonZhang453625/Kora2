@@ -162,4 +162,4 @@ const zh: TranslationDict = {
 };
 
 export const dictionaries: Record<Locale, TranslationDict> = { en, zh };
-export const defaultLocale: Locale = "en";
+export const defaultLocale: Locale = "zh";
