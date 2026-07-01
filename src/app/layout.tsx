@@ -16,13 +16,13 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KORA — 真正懂你品味的 AI 编程助手",
+  title: "KORA — Your AI Companion in China",
   description:
-    "KORA (Command Code) 是首个会学习你编程品味的 AI 终端代理。安装后输入 cmdc 即可使用。",
+    "Chat with KORA on Telegram for the best food, travel, and daily life recommendations across China.",
   openGraph: {
-    title: "KORA — AI Coding Agent That Learns Your Taste",
+    title: "KORA — Your AI Companion in China",
     description:
-      "The first coding agent that learns your taste. Meta neuro-symbolic AI with continuous RL.",
+      "Chat on Telegram to discover the best food, travel spots, and everyday essentials across China.",
     type: "website",
   },
 };
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="zh"
+      lang="en"
       suppressHydrationWarning
       className={`${inter.variable} ${jetbrains.variable} h-full antialiased`}
     >

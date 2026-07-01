@@ -13,7 +13,9 @@ export default function CTASection() {
           {t.cta.title}
         </h2>
         <p className="text-text-secondary mb-8">{t.cta.subtitle}</p>
-        <Button href="#install">{t.cta.button} →</Button>
+        <Button variant="primary" href="https://t.me/KORA_bot">
+          {t.cta.button} ↗
+        </Button>
       </div>
     </section>
   );

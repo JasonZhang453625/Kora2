@@ -7,10 +7,10 @@ export default function FeaturesSection() {
   const { t } = useLocale();
 
   const features = [
-    { emoji: "🧠", key: "taste" as const },
-    { emoji: "🔒", key: "privacy" as const },
-    { emoji: "🤖", key: "models" as const },
-    { emoji: "🔧", key: "mcp" as const },
+    { emoji: "🍜", key: "food" as const },
+    { emoji: "🏯", key: "travel" as const },
+    { emoji: "🚇", key: "daily" as const },
+    { emoji: "💬", key: "support" as const },
   ];
 
   return (
@@ -27,14 +27,14 @@ export default function FeaturesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((f) => {
-            const titleKey = f.key as keyof typeof t.features;
+            const titleKey = f.key;
             const descKey = `${f.key}Desc` as keyof typeof t.features;
             return (
               <FeatureCard
                 key={f.key}
                 emoji={f.emoji}
-                title={t.features[titleKey] as unknown as string}
-                description={t.features[descKey] as unknown as string}
+                title={t.features[titleKey]}
+                description={t.features[descKey]}
               />
             );
           })}

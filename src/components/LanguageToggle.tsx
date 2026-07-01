@@ -7,10 +7,10 @@ export default function LanguageToggle() {
 
   return (
     <button
-      onClick={() => setLocale(locale === "zh" ? "en" : "zh")}
+      onClick={() => setLocale(locale === "en" ? "zh" : "en")}
       className="font-mono text-sm text-text-secondary hover:text-accent transition-colors"
     >
-      {locale === "zh" ? "EN" : "中"}
+      {locale === "en" ? "中" : "EN"}
     </button>
   );
 }

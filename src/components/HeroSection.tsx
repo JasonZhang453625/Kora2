@@ -1,8 +1,6 @@
 "use client";
 
 import { useLocale } from "@/lib/context";
-import TerminalPrompt from "./TerminalPrompt";
-import CodeBlock from "./CodeBlock";
 import Button from "./Button";
 
 export default function HeroSection() {
@@ -25,18 +23,47 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <TerminalPrompt />
+        {/* Telegram chat preview */}
+        <div className="w-full max-w-md rounded-xl border border-border bg-white shadow-xl p-5 text-left">
+          <div className="flex items-center gap-3 mb-4 pb-3 border-b border-border">
+            <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold text-sm">
+              K
+            </div>
+            <div>
+              <div className="font-semibold text-text-primary text-sm">KORA</div>
+              <div className="text-xs text-text-secondary">AI Companion · Online</div>
+            </div>
+            <div className="ml-auto">
+              <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+            </div>
+          </div>
 
-        <div className="w-full max-w-lg">
-          <CodeBlock code={t.hero.install} />
+          <div className="space-y-3">
+            <div className="flex justify-start">
+              <div className="bg-accent/10 text-text-primary rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm max-w-[85%]">
+                Hi! I&apos;m in Beijing for 3 days. What should I eat?
+              </div>
+            </div>
+            <div className="flex justify-end">
+              <div className="bg-accent text-white rounded-2xl rounded-br-sm px-4 py-2.5 text-sm max-w-[85%]">
+                Try Peking duck at Siji Minfu near Qianmen, then explore the hutong street food scene around
+                Nanluoguxiang. Want a full itinerary? 🦆
+              </div>
+            </div>
+            <div className="flex justify-start">
+              <div className="bg-accent/10 text-text-primary rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm max-w-[85%]">
+                Yes please! Also need a good hotpot place.
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="flex items-center gap-4 flex-wrap justify-center">
           <Button
-            variant="secondary"
-            href="https://github.com/JasonZhang453625/KORA2"
+            variant="primary"
+            href="https://t.me/KORA_bot"
           >
-            {t.hero.viewGithub}
+            {t.hero.cta} ↗
           </Button>
           <Button variant="ghost" href="#screenshots">
             {t.hero.viewScreenshots} ↓

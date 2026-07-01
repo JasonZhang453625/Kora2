@@ -30,18 +30,12 @@ export default function Header() {
         <nav className="flex items-center gap-6">
           <LanguageToggle />
           <a
-            href="https://github.com/JasonZhang453625/KORA2"
+            href="https://t.me/KORA_bot"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-sm text-text-secondary hover:text-accent transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href="#install"
             className="font-mono text-sm font-semibold px-4 py-2 rounded-lg bg-accent text-white hover:bg-accent-light transition-colors"
           >
-            {t.header.install}
+            {t.header.telegram} ↗
           </a>
         </nav>
       </div>

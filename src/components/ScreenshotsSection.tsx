@@ -6,9 +6,9 @@ import Image from "next/image";
 import ScreenshotLightbox from "./ScreenshotLightbox";
 
 const images = [
-  { src: "/images/1.jpg", alt: "KORA screenshot 1" },
-  { src: "/images/2.jpg", alt: "KORA screenshot 2" },
-  { src: "/images/3.jpg", alt: "KORA screenshot 3" },
+  { src: "/images/1.jpg", alt: "KORA Telegram chat screenshot 1" },
+  { src: "/images/2.jpg", alt: "KORA Telegram chat screenshot 2" },
+  { src: "/images/3.jpg", alt: "KORA Telegram chat screenshot 3" },
 ];
 
 export default function ScreenshotsSection() {

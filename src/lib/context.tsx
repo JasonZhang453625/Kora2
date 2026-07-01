@@ -17,7 +17,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem("kora-locale") as Locale | null;
-    if (stored && (stored === "zh" || stored === "en")) {
+    if (stored && (stored === "en" || stored === "zh")) {
       setLocale(stored);
     } else {
       const navLang = navigator.language.toLowerCase();
