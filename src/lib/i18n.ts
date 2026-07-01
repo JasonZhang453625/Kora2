@@ -57,7 +57,7 @@ const en: TranslationDict = {
     telegram: "Chat on Telegram",
   },
   hero: {
-    title: "Meet KORA — Your Local Friend Who Actually Lives in China 🇨🇳",
+    title: "KORA — Your AI Friend Who Actually Lives in China 🇨🇳",
     subtitle:
       "The local you wish you had on speed dial. Skip the tourist traps — I'll send you where locals actually eat, drink, and hang out, with real Chinese addresses + Amap links so any taxi driver gets you there.",
     chatPreview: {
@@ -112,7 +112,7 @@ const zh: TranslationDict = {
     telegram: "在 Telegram 上聊天",
   },
   hero: {
-    title: "认识 KORA — 你的中国本地朋友 🇨🇳",
+    title: "KORA — 你在中国的 AI 助手 🇨🇳",
     subtitle:
       "你希望通讯录里就有的那个本地人。跳过游客陷阱——我告诉你本地人真正在哪里吃喝玩乐，附中文地址和高德链接，出租车司机一看就懂。",
     chatPreview: {
