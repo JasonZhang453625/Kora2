@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Inter, Noto_Sans_SC } from "next/font/google";
+import { JetBrains_Mono, Inter } from "next/font/google";
 import { LocaleProvider } from "@/lib/context";
 import "./globals.css";
 
@@ -13,13 +13,6 @@ const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains",
   subsets: ["latin"],
   display: "swap",
-});
-
-const notoSansSC = Noto_Sans_SC({
-  variable: "--font-noto-sc",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -43,7 +36,7 @@ export default function RootLayout({
     <html
       lang="zh"
       suppressHydrationWarning
-      className={`${inter.variable} ${jetbrains.variable} ${notoSansSC.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetbrains.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LocaleProvider>{children}</LocaleProvider>
