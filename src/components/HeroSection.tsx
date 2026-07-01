@@ -69,9 +69,6 @@ export default function HeroSection() {
           <Button variant="primary" href="https://t.me/KORA_bot">
             {t.hero.cta} ↗
           </Button>
-          <Button variant="ghost" href="#screenshots">
-            {t.hero.viewScreenshots} ↓
-          </Button>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/context";
 import FeatureCard from "./FeatureCard";
 
@@ -15,29 +16,41 @@ export default function FeaturesSection() {
 
   return (
     <section className="min-h-screen flex items-center px-6 py-24 bg-bg-secondary">
-      <div className="mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="font-mono font-bold text-2xl md:text-3xl text-text-primary mb-3">
-            {t.features.title}
-          </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto">
-            {t.features.subtitle}
-          </p>
-        </div>
+      <div className="mx-auto max-w-6xl w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left: feature cards */}
+          <div>
+            <h2 className="font-mono font-bold text-2xl md:text-3xl text-text-primary mb-4">
+              {t.features.title}
+            </h2>
+            <p className="text-text-secondary mb-10">{t.features.subtitle}</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((f) => {
-            const titleKey = f.key;
-            const descKey = `${f.key}Desc` as keyof typeof t.features;
-            return (
-              <FeatureCard
-                key={f.key}
-                emoji={f.emoji}
-                title={t.features[titleKey]}
-                description={t.features[descKey]}
-              />
-            );
-          })}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {features.map((f) => {
+                const titleKey = f.key;
+                const descKey = `${f.key}Desc` as keyof typeof t.features;
+                return (
+                  <FeatureCard
+                    key={f.key}
+                    emoji={f.emoji}
+                    title={t.features[titleKey]}
+                    description={t.features[descKey]}
+                  />
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Right: screenshot */}
+          <div className="rounded-xl border border-border overflow-hidden shadow-lg">
+            <Image
+              src="/images/2.jpg"
+              alt="KORA recommending places"
+              width={600}
+              height={800}
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </section>

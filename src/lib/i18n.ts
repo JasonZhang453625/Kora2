@@ -112,7 +112,7 @@ const zh: TranslationDict = {
     telegram: "在 Telegram 上聊天",
   },
   hero: {
-    title: "KORA — 你在中国的 AI 助手 🇨🇳",
+    title: "KORA — 你在中国的 AI 助手",
     subtitle:
       "你希望通讯录里就有的那个本地人。跳过游客陷阱——我告诉你本地人真正在哪里吃喝玩乐，附中文地址和高德链接，出租车司机一看就懂。",
     chatPreview: {
