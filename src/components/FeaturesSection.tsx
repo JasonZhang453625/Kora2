@@ -8,9 +8,9 @@ export default function FeaturesSection() {
 
   const features = [
     { emoji: "🍜", key: "food" as const },
-    { emoji: "🏯", key: "travel" as const },
-    { emoji: "🚇", key: "daily" as const },
-    { emoji: "💬", key: "support" as const },
+    { emoji: "🍸", key: "nightlife" as const },
+    { emoji: "🚕", key: "navigation" as const },
+    { emoji: "💳", key: "survival" as const },
   ];
 
   return (

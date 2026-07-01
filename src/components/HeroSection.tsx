@@ -15,7 +15,7 @@ export default function HeroSection() {
 
       <div className="relative mx-auto max-w-4xl flex flex-col items-center text-center gap-10">
         <div className="space-y-4">
-          <h1 className="font-mono font-bold text-text-primary leading-tight text-[clamp(2rem,5vw,4rem)]">
+          <h1 className="font-mono font-bold text-text-primary leading-tight text-[clamp(1.8rem,4.5vw,3.5rem)]">
             {t.hero.title}
           </h1>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
@@ -31,7 +31,7 @@ export default function HeroSection() {
             </div>
             <div>
               <div className="font-semibold text-text-primary text-sm">KORA</div>
-              <div className="text-xs text-text-secondary">AI Companion · Online</div>
+              <div className="text-xs text-text-secondary">Online 🇨🇳</div>
             </div>
             <div className="ml-auto">
               <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
@@ -40,29 +40,25 @@ export default function HeroSection() {
 
           <div className="space-y-3">
             <div className="flex justify-start">
-              <div className="bg-accent/10 text-text-primary rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm max-w-[85%]">
-                Hi! I&apos;m in Beijing for 3 days. What should I eat?
+              <div className="bg-accent/10 text-text-primary rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm max-w-[85%] leading-relaxed">
+                {t.hero.chatPreview.user1}
               </div>
             </div>
             <div className="flex justify-end">
-              <div className="bg-accent text-white rounded-2xl rounded-br-sm px-4 py-2.5 text-sm max-w-[85%]">
-                Try Peking duck at Siji Minfu near Qianmen, then explore the hutong street food scene around
-                Nanluoguxiang. Want a full itinerary? 🦆
+              <div className="bg-accent text-white rounded-2xl rounded-br-sm px-4 py-2.5 text-sm max-w-[85%] leading-relaxed">
+                {t.hero.chatPreview.bot1}
               </div>
             </div>
             <div className="flex justify-start">
-              <div className="bg-accent/10 text-text-primary rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm max-w-[85%]">
-                Yes please! Also need a good hotpot place.
+              <div className="bg-accent/10 text-text-primary rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm max-w-[85%] leading-relaxed">
+                {t.hero.chatPreview.user2}
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex items-center gap-4 flex-wrap justify-center">
-          <Button
-            variant="primary"
-            href="https://t.me/KORA_bot"
-          >
+          <Button variant="primary" href="https://t.me/KORA_bot">
             {t.hero.cta} ↗
           </Button>
           <Button variant="ghost" href="#screenshots">

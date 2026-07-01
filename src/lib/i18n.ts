@@ -7,6 +7,11 @@ export interface TranslationDict {
   hero: {
     title: string;
     subtitle: string;
+    chatPreview: {
+      user1: string;
+      bot1: string;
+      user2: string;
+    };
     cta: string;
     viewScreenshots: string;
   };
@@ -25,12 +30,12 @@ export interface TranslationDict {
     subtitle: string;
     food: string;
     foodDesc: string;
-    travel: string;
-    travelDesc: string;
-    daily: string;
-    dailyDesc: string;
-    support: string;
-    supportDesc: string;
+    nightlife: string;
+    nightlifeDesc: string;
+    navigation: string;
+    navigationDesc: string;
+    survival: string;
+    survivalDesc: string;
   };
   screenshots: {
     title: string;
@@ -49,97 +54,110 @@ export interface TranslationDict {
 
 const en: TranslationDict = {
   header: {
-    telegram: "Open Telegram",
+    telegram: "Chat on Telegram",
   },
   hero: {
-    title: "KORA — Your AI Companion in China",
+    title: "Meet KORA — Your Local Friend Who Actually Lives in China 🇨🇳",
     subtitle:
-      "Chat on Telegram to discover the best food, travel spots, and everyday essentials across China. Just ask.",
-    cta: "Start Chatting on Telegram",
-    viewScreenshots: "See how it works",
+      "The local you wish you had on speed dial. Skip the tourist traps — I'll send you where locals actually eat, drink, and hang out, with real Chinese addresses + Amap links so any taxi driver gets you there.",
+    chatPreview: {
+      user1: "I'm in Shanghai for 3 days. What should I not miss?",
+      bot1:
+        "Great timing! 🎯 Tonight hit Bar No.3 on Yongkang Rd for natural wine and great vibes. Tomorrow morning, go to Lao Yang Sheng Jian for the best pan-fried pork buns in the city — ¥12 for 4, and the queue moves fast. Want me to plan the whole 3 days?",
+      user2: "Yes please! Also need a good hotpot spot.",
+    },
+    cta: "Chat with KORA on Telegram",
+    viewScreenshots: "See it in action",
   },
   howItWorks: {
     title: "How It Works",
-    subtitle: "Three steps to your personal China guide",
+    subtitle: "Your China friend, just a Telegram away",
     step1: "Open Telegram",
     step1Desc: "On your phone or desktop",
     step2: "Chat with KORA",
-    step2Desc: "Find @KORA_bot and start talking",
-    step3: "Ask Anything",
-    step3Desc: '"Where to eat?" "What to see?" — just ask',
+    step2Desc: "Say hi — tell me where you are and what you want",
+    step3: "Get the Local Scoop",
+    step3Desc: "Real addresses, Amap links, and insider tips instantly",
   },
   features: {
     title: "What KORA Can Do for You",
     subtitle:
-      "Your all-in-one AI assistant for life in China — from street food to scenic spots.",
-    food: "Food & Dining",
-    foodDesc: "Find the best restaurants, local hidden gems, and must-try dishes anywhere you go",
-    travel: "Travel & Explore",
-    travelDesc: "Discover attractions, weekend getaways, and off-the-beaten-path adventures",
-    daily: "Daily Life",
-    dailyDesc: "Navigation tips, translation help, cultural advice — survive and thrive in China",
-    support: "24/7 AI Chat",
-    supportDesc: "Always online, always helpful. Ask any question, anytime, in natural language",
+      "From ¥30 street noodles to hidden speakeasies — I've got all of China covered.",
+    food: "🍜 Food & Dining",
+    foodDesc: "Street stalls to hidden gems — real addresses, real recs, no tourist traps",
+    nightlife: "🍸 Bars & Nightlife",
+    nightlifeDesc: "Rooftops, speakeasies, dance floors — wherever the night takes you",
+    navigation: "🚕 Getting Around",
+    navigationDesc: "Metro, taxi, navigation — with Amap links so any driver gets you there",
+    survival: "💳 China Survival",
+    survivalDesc: "Alipay/WeChat pay, VPN tips, key phrases — live like a local",
   },
   screenshots: {
-    title: "See KORA in Action",
-    subtitle: "Real conversations between travelers and KORA on Telegram",
+    title: "Real Conversations with KORA",
+    subtitle: "See how travelers chat with KORA to discover the real China",
   },
   cta: {
-    title: "Ready to explore China like a local?",
-    subtitle: "Open Telegram and start chatting with KORA now",
-    button: "Start Chatting on Telegram",
+    title: "The local you wish you had on speed dial 🎯",
+    subtitle: "Open Telegram and say hi — tell me where you are and what you're after",
+    button: "Chat with KORA on Telegram",
   },
   footer: {
-    tagline: "Your AI companion for exploring China",
-    copyright: "Built for travelers, by travelers",
+    tagline: "Your local friend who actually lives in China",
+    copyright: "Built for travelers exploring China",
   },
 };
 
 const zh: TranslationDict = {
   header: {
-    telegram: "打开 Telegram",
+    telegram: "在 Telegram 上聊天",
   },
   hero: {
-    title: "KORA — 你的中国生活 AI 助手",
-    subtitle: "在 Telegram 上聊天，发现中国最好吃的美食、好玩的去处和日常生活的一切。直接问就行。",
-    cta: "在 Telegram 上开始聊天",
-    viewScreenshots: "看看怎么用",
+    title: "认识 KORA — 你的中国本地朋友 🇨🇳",
+    subtitle:
+      "你希望通讯录里就有的那个本地人。跳过游客陷阱——我告诉你本地人真正在哪里吃喝玩乐，附中文地址和高德链接，出租车司机一看就懂。",
+    chatPreview: {
+      user1: "我在上海待3天，有什么不能错过的？",
+      bot1:
+        "来得正好！🎯 今晚去永康路的 Bar No.3 喝自然酒，氛围超棒。明早去老杨生煎吃上海最好吃的生煎包——4个才¥12，排队很快。要我帮你规划整3天吗？",
+      user2: "太好了！再推荐个好的火锅店。",
+    },
+    cta: "在 Telegram 上跟 KORA 聊天",
+    viewScreenshots: "看看实际效果",
   },
   howItWorks: {
-    title: "三步上手",
-    subtitle: "三秒打开，即刻畅聊",
+    title: "三步开聊",
+    subtitle: "你的中国本地朋友，在 Telegram 上等你",
     step1: "打开 Telegram",
-    step1Desc: "手机或电脑上均可",
-    step2: "与 KORA 对话",
-    step2Desc: "搜索 @KORA_bot 开始聊天",
-    step3: "随便问",
-    step3Desc: '"哪里好吃？" "去哪玩？" ——直接问',
+    step1Desc: "手机或电脑都行",
+    step2: "跟 KORA 打个招呼",
+    step2Desc: "告诉我你在哪、想干嘛",
+    step3: "获取本地情报",
+    step3Desc: "真实地址、高德链接、内行贴士，秒回",
   },
   features: {
-    title: "KORA 能帮你做什么",
-    subtitle: "一站式 AI 助手，覆盖在华生活吃喝玩乐全部场景。",
-    food: "美食探索",
-    foodDesc: "推荐地道餐厅、隐藏小店和必尝美食，走到哪吃到哪",
-    travel: "旅行攻略",
-    travelDesc: "发现景点、周末好去处和小众路线，玩遍中国",
-    daily: "日常生活",
-    dailyDesc: "导航指引、翻译帮助、文化贴士——在中国生活无忧",
-    support: "7×24 小时在线",
-    supportDesc: "随时在线，随时帮忙。用自然语言问任何问题",
+    title: "KORA 能帮你什么",
+    subtitle: "从 ¥30 的街头面馆到隐藏酒吧——全中国我都熟。",
+    food: "🍜 美食探索",
+    foodDesc: "街边摊到隐藏好店——真实推荐，没有游客陷阱",
+    nightlife: "🍸 酒吧夜生活",
+    nightlifeDesc: "天台酒吧、隐藏酒吧、舞池——夜晚由你主宰",
+    navigation: "🚕 出行导航",
+    navigationDesc: "地铁、打车、导航——附高德链接，司机一看就懂",
+    survival: "💳 在华生存指南",
+    survivalDesc: "支付宝/微信支付、VPN、常用短语——像当地人一样生活",
   },
   screenshots: {
-    title: "看看 KORA 的实际效果",
-    subtitle: "旅行者与 KORA 在 Telegram 上的真实对话",
+    title: "与 KORA 的真实对话",
+    subtitle: "看看旅行者们如何通过 KORA 发现真实的中国",
   },
   cta: {
-    title: "准备好像当地人一样探索中国了吗？",
-    subtitle: "打开 Telegram，即刻与 KORA 开始对话",
-    button: "在 Telegram 上开始聊天",
+    title: "你希望通讯录里就有的那个本地朋友 🎯",
+    subtitle: "打开 Telegram 打个招呼——告诉我你在哪、想要什么",
+    button: "在 Telegram 上跟 KORA 聊天",
   },
   footer: {
-    tagline: "你的中国探索 AI 伙伴",
-    copyright: "为旅行者而生",
+    tagline: "你的中国本地朋友",
+    copyright: "为探索中国的旅行者而生",
   },
 };
 
