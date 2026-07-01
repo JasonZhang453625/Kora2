@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/context";
 import Button from "./Button";
 
@@ -8,9 +9,16 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 pb-24">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-accent-muted/30 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-accent-muted/20 blur-3xl" />
+      {/* Background image */}
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/images/hero-bg.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-bg-primary/60 backdrop-blur-[2px]" />
       </div>
 
       <div className="relative mx-auto max-w-4xl flex flex-col items-center text-center gap-10">
@@ -24,7 +32,7 @@ export default function HeroSection() {
         </div>
 
         {/* Telegram chat preview */}
-        <div className="w-full max-w-md rounded-xl border border-border bg-white shadow-xl p-5 text-left">
+        <div className="w-full max-w-md rounded-xl border border-border bg-white/95 backdrop-blur shadow-xl p-5 text-left">
           <div className="flex items-center gap-3 mb-4 pb-3 border-b border-border">
             <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold text-sm">
               K

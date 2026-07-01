@@ -12,7 +12,7 @@ export default function HowItWorksSection() {
   ];
 
   return (
-    <section className="px-6 py-24">
+    <section className="min-h-screen flex items-center px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="font-mono font-bold text-2xl md:text-3xl text-text-primary mb-3">

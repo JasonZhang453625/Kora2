@@ -14,7 +14,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="px-6 py-24 bg-bg-secondary">
+    <section className="min-h-screen flex items-center px-6 py-24 bg-bg-secondary">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="font-mono font-bold text-2xl md:text-3xl text-text-primary mb-3">
