@@ -15,7 +15,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-6 text-sm font-mono text-text-secondary">
           <a
-            href="https://t.me/KORA_bot"
+            href="https://t.me/Kora_china_bot"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors"

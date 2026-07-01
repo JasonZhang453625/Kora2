@@ -30,7 +30,7 @@ export default function Header() {
         <nav className="flex items-center gap-6">
           <LanguageToggle />
           <a
-            href="https://t.me/KORA_bot"
+            href="https://t.me/Kora_china_bot"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-sm font-semibold px-4 py-2 rounded-lg bg-accent text-white hover:bg-accent-light transition-colors"

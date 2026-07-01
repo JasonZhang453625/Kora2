@@ -13,7 +13,7 @@ export default function CTASection() {
           {t.cta.title}
         </h2>
         <p className="text-text-secondary mb-8 text-lg">{t.cta.subtitle}</p>
-        <Button variant="primary" href="https://t.me/KORA_bot">
+        <Button variant="primary" href="https://t.me/Kora_china_bot">
           {t.cta.button} ↗
         </Button>
       </div>
